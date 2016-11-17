@@ -36,6 +36,7 @@ class Load {
   }
   create() {
     console.log("Shutting down.");
+    this.state.start("Play")
   }
 }
  class Play {
