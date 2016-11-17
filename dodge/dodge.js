@@ -45,12 +45,14 @@ class Load {
   create() {
     console.log("MOTION IN TESTING AREA 01");
     this.bg = this.add.sprite(0,0,"bg");
+    this.bg.width = game.world.width
+
   }
 }
 function restart() {
   game.state.start("Boot");
 }
-var game = new Phaser.Game(568, 320);
+var game = new Phaser.Game(C.game.width,C.game.height);
 game.state.add("Boot",Boot);
 game.state.add("Load", Load);
 game.state.add("Play",Play);
