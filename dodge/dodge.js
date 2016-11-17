@@ -33,6 +33,8 @@ class Boot {
 class Load {
   preload() {
     console.log("Preparing to dispense product.");
+    this.load.image("bg",C.bg.file)
+    this.load.spritesheet("placeholder",C.p.file,C.p.width,C.p.height,C.p.frames)
   }
   create() {
     console.log("Shutting down.");
