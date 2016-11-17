@@ -44,7 +44,7 @@ class Load {
  class Play {
   create() {
     console.log("MOTION IN TESTING AREA 01");
-    this.bg = this.add.sprite(C.bg.width,C.bg.height,"bg");
+    this.bg = this.add.sprite(0,0,"bg");
   }
 }
 function restart() {
