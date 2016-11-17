@@ -47,6 +47,7 @@ class Load {
     this.bg = this.add.sprite(0,0,"bg");
     this.bg.width = game.world.width
     this.bg.height = game.world.height
+    this.bg.smoothed = false
   }
 }
 function restart() {
