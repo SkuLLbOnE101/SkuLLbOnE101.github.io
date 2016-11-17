@@ -32,20 +32,19 @@ class Boot {
 
 class Load {
   preload() {
-    console.log("Preparing to dispense product.");
+    console.log("ACTIVATING TESTING PROCEDURE");
     this.load.image("bg",C.bg.file)
-    this.load.spritesheet("placeholder",C.p.file,C.p.width,C.p.height,C.p.frames)
+    //this.load.spritesheet("placeholder",C.p.file,C.p.width,C.p.height,C.p.frames)
   }
   create() {
-    console.log("Shutting down.");
+    console.log("ACTIVATED");
     this.state.start("Play")
   }
 }
  class Play {
   create() {
-    console.log("Motion in CHAMBER 01");
-    this.bg = this.add.tileSprite(0,0,C.bg.width,C.bg.height,"bg");
-    this.bg.autoScroll(C.bg.xspeed,C.bg.yspeed);
+    console.log("MOTION IN TESTING AREA 01");
+    this.bg = this.add.sprite(C.bg.width,C.bg.height,"bg");
   }
 }
 function restart() {
