@@ -46,7 +46,7 @@ class Load {
     console.log("MOTION IN TESTING AREA 01");
     this.bg = this.add.sprite(0,0,"bg");
     this.bg.width = game.world.width
-
+    this.bg.height = game.world.height
   }
 }
 function restart() {
