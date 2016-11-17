@@ -8,9 +8,16 @@ var C = {
     "height": 568,
     "xspeed": 0,
     "yspeed": 10,
-    "file": "assets/GLaDOS.png"
-  }
+    "file": "assets/glados.png"
+},
+"p": {
+  "file": "assets/shutup.png
+  "width": 46,
+  "height": 64,
+  "frames": 1
+     } 
 }
+
 
 class Boot {
   preload() {
