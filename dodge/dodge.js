@@ -38,10 +38,18 @@ class Load {
     console.log("Shutting down.");
   }
 }
+ class Play {
+  create() {
+    console.log("Motion in CHAMBER 01");
+    this.bg = this.add.tileSprite(0,0,C.bg.width,C.bg.height,"bg");
+    this.bg.autoScroll(C.bg.xspeed,C.bg.yspeed);
+  }
+}
 function restart() {
   game.state.start("Boot");
 }
 var game = new Phaser.Game(568, 320);
 game.state.add("Boot",Boot);
 game.state.add("Load", Load);
+game.state.add("Play",Play);
 game.state.start("Boot");
