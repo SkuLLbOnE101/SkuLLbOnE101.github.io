@@ -11,7 +11,7 @@ var C = {
     "file": "assets/glados.png"
 },
 "p": {
-  "file": "assets/shutup.png
+  "file": "assets/shutup.png",
   "width": 46,
   "height": 64,
   "frames": 1
