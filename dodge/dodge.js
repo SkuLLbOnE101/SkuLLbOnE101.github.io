@@ -1,3 +1,6 @@
+
+//Heya there
+
 var C = {
   "game": {
     "width":320,
@@ -14,7 +17,9 @@ var C = {
   "file": "assets/shutup.png",
   "width": 46,
   "height": 64,
-  "frames": 1
+  "frames": 1 ,
+  "startx": 160,
+  "starty": 500
      } 
 }
 
@@ -34,6 +39,7 @@ class Load {
   preload() {
     console.log("ACTIVATING TESTING PROCEDURE");
     this.load.image("bg",C.bg.file)
+    this.load.image("p",C.p.file)
     //this.load.spritesheet("placeholder",C.p.file,C.p.width,C.p.height,C.p.frames)
   }
   create() {
@@ -48,8 +54,18 @@ class Load {
     this.bg.width = game.world.width
     this.bg.height = game.world.height
     this.bg.smoothed = false
+
+  
+    this.player = this.add.sprite(C.p.startx,C.p.starty,"p");
+    this.player.anchor.set(0.5, 0.5);
+    this.player.smoothed = true;
+    this.player.scale.set(1);
+    //this.player.animations.add("anim");
+    //this.player.animations.play("anim",C.p.fps,true);
   }
 }
+
+
 function restart() {
   game.state.start("Boot");
 }
