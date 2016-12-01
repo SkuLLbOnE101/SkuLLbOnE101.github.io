@@ -59,7 +59,7 @@ class Load {
     this.player = this.add.sprite(C.p.startx,C.p.starty,"p");
     this.player.anchor.set(0.5, 0.5);
     this.player.smoothed = true;
-    this.player.scale.set(1);
+    this.player.scale.set(.25);
     //this.player.animations.add("anim");
     //this.player.animations.play("anim",C.p.fps,true);
   }
