@@ -14,7 +14,7 @@ var C = {
     "file": "assets/glados.png"
 },
 "p": {
-  "file": "assets/shutup.png",
+  "file": "assets/Propulsion.jpg",
   "width": 46,
   "height": 64,
   "frames": 1 ,
@@ -40,7 +40,7 @@ class Load {
     console.log("ACTIVATING TESTING PROCEDURE");
     this.load.image("bg",C.bg.file)
     this.load.image("p",C.p.file)
-    //this.load.spritesheet("placeholder",C.p.file,C.p.width,C.p.height,C.p.frames)
+    //this.load.spritesheet("",C.p.file,C.p.width,C.p.height,C.p.frames)
   }
   create() {
     console.log("ACTIVATED");
@@ -59,7 +59,7 @@ class Load {
     this.player = this.add.sprite(C.p.startx,C.p.starty,"p");
     this.player.anchor.set(0.5, 0.5);
     this.player.smoothed = true;
-    this.player.scale.set(.25);
+    this.player.scale.set(1);
     //this.player.animations.add("anim");
     //this.player.animations.play("anim",C.p.fps,true);
   }
