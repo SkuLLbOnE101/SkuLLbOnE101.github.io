@@ -1,4 +1,3 @@
-
 //Heya there
 
 var C = {
@@ -20,6 +19,15 @@ var C = {
   "frames": 1 ,
   "startx": 160,
   "starty": 500
+  },
+  "d": {
+    "file": "assets/propulsion.jpg",
+    "width": 64,
+    "height": 64,
+    "frames": 28,
+    "fps": 24,
+    "startx": 160,
+    "starty": 32
      } 
 }
 
@@ -40,7 +48,7 @@ class Load {
     console.log("ACTIVATING TESTING PROCEDURE");
     this.load.image("bg",C.bg.file)
     this.load.image("p",C.p.file)
-    //this.load.spritesheet("",C.p.file,C.p.width,C.p.height,C.p.frames)
+    this.load.spritesheet("d",C.d.file,C.d.width,C.d.height,C.d.frames)
   }
   create() {
     console.log("ACTIVATED");
