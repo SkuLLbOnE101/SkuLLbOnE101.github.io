@@ -48,7 +48,7 @@ class Load {
     console.log("ACTIVATING TESTING PROCEDURE");
     this.load.image("bg",C.bg.file)
     this.load.image("p",C.p.file)
-    this.load.spritesheet("d",C.d.file,C.d.width,C.d.height,C.d.frames)
+    this.load.image("d",C.d.file)
   }
   create() {
     console.log("ACTIVATED");
