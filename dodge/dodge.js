@@ -37,6 +37,7 @@ class Boot {
     this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     this.scale.pageAlignHorizontally = true;
     this.scale.pageAlignVertically = true;
+    i
   }
   create() {
     this.state.start("Load")
@@ -68,8 +69,13 @@ class Load {
     this.player.anchor.set(0.5, 0.5);
     this.player.smoothed = false;
     this.player.scale.set(3.5);
-    //this.player.animations.add("anim");
-    //this.player.animations.play("anim",C.p.fps,true);
+
+    this.dodge = this.add.sprite(C.d.startx,C.d.starty,"dodge");
+    this.dodge.anchor.set(0.5,0.5);
+    this.dodge.smoothed = false;
+    this.dodge.scale.set(1);
+    this.dodge.animations.add("anim");
+    this.dodge.animations.play("anim",C.d.fps,true);
   }
 }
 
