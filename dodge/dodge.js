@@ -69,7 +69,7 @@ class Load {
     this.player.smoothed = false;
     this.player.scale.set(3.5);
 
-    this.dodge = this.add.sprite(C.d.startx,C.d.starty,"dodge");
+    this.dodge = this.add.sprite(C.d.startx,C.d.starty,"d");
     this.dodge.anchor.set(0.5,0.5);
     this.dodge.smoothed = false;
     this.dodge.scale.set(1);
