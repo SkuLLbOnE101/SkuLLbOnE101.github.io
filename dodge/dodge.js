@@ -14,7 +14,7 @@ var C = {
     "file": "assets/glados.png"
 },
 "p": {
-  "file": "assets/Propulsion.jpg",
+  "file": "assets/space.jpg",
   "width": 46,
   "height": 64,
   "frames": 1 ,
@@ -58,8 +58,8 @@ class Load {
   
     this.player = this.add.sprite(C.p.startx,C.p.starty,"p");
     this.player.anchor.set(0.5, 0.5);
-    this.player.smoothed = true;
-    this.player.scale.set(1);
+    this.player.smoothed = false;
+    this.player.scale.set(3.5);
     //this.player.animations.add("anim");
     //this.player.animations.play("anim",C.p.fps,true);
   }
